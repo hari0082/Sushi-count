@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  background-color: #f5e6d3; /* Lys bambus-farve */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 48px;
+  color: #d62828; /* Rød farve som soya sauce */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.count {
+  font-size: 72px;
+  font-weight: bold;
+  color: #1d3557; /* Mørkeblå farve */
+  margin: 20px 0;
+  position: relative;
+}
+
+.count::before, .count::after {
+  content: '🍣';
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.count::before {
+  left: -60px;
+}
+
+.count::after {
+  right: -60px;
+}
+
+.add-button {
+  font-size: 24px;
+  padding: 15px 30px;
+  background-color: #4caf50; /* Grøn farve som wasabi */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.add-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.add-button:active {
+  transform: scale(0.95);
+}
+
+.sushi-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  opacity: 0.1;
+  z-index: -1;
+}
