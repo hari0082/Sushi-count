@@ -14,7 +14,7 @@ function App() {
       <h1 className="title">Sushi Tæller</h1>
       <p className="count">Sushi: {count}</p>
       <button className="add-button" onClick={addSushi}>
-        Tilføj
+        Tilføj en
       </button>
     </div>
   );
