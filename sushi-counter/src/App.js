@@ -86,14 +86,14 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Velkommen til Sushi Tæller
+              Sushi Counter
             </motion.h1>
             <Button
               onClick={() => setPage("counter")}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              Start Tælling
+              Start
             </Button>
           </Content>
         );
@@ -153,7 +153,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Header>🍣 Sushi Tæller</Header>
+      <Header>🍣</Header>
       <AnimatePresence mode="wait">
         <motion.div
           key={page}
